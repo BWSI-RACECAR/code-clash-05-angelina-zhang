@@ -32,7 +32,7 @@ class Solution:
         # TODO: Write code below to return an int with the solution to the prompt
         counter = 0
         for chars in range(0,len(hi_string)-1):
-            if (hi_string[chars] == "h" and hi_string[chars+1] == "i"):
+            if ((hi_string[chars] == "h" or hi_string[chars] == "H")and (hi_string[chars+1] == "i" or hi_string[chars+1] == "I")):
                 counter+=1
         return counter
 
